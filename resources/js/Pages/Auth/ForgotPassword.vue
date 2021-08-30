@@ -38,6 +38,7 @@ import JetButton from '@/Jetstream/Button'
 import JetInput from '@/Jetstream/Input'
 import JetLabel from '@/Jetstream/Label'
 import JetValidationErrors from '@/Jetstream/ValidationErrors'
+import BlankLayout from '@/Layouts/BlankLayout'
 
 export default {
   components: {
@@ -48,7 +49,7 @@ export default {
     JetLabel,
     JetValidationErrors
   },
-
+  layout: BlankLayout,
   props: {
     status: String
   },

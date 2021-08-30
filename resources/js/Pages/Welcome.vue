@@ -140,12 +140,14 @@
 </style>
 
 <script>
+import BlankLayout from '@/Layouts/BlankLayout'
 export default {
   props: {
     canLogin: Boolean,
     canRegister: Boolean,
     laravelVersion: String,
     phpVersion: String,
-  }
+  },
+  layout: BlankLayout,
 }
 </script>

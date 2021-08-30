@@ -114,7 +114,6 @@
 
 <script>
 import JetApplicationLogo from '@/Jetstream/ApplicationLogo'
-import JetBanner from '@/Jetstream/Banner'
 import JetApplicationMark from '@/Jetstream/ApplicationMark'
 import JetDropdown from '@/Jetstream/Dropdown'
 import JetDropdownLink from '@/Jetstream/DropdownLink'
@@ -123,7 +122,6 @@ export default {
     name: 'Navbar',
     components: {
         JetApplicationLogo,
-        JetBanner,
         JetApplicationMark,
         JetDropdown,
         JetDropdownLink,

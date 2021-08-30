@@ -125,13 +125,13 @@
       </li>
       <li class="nav-item dropdown user-menu">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-          <img :src="'storage/img/user2-160x160.jpg'" class="user-image img-circle elevation-2" alt="User Image">
+          <PhotoProfile />
         </a>
         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <!-- User image -->
           <li class="user-header bg-primary">
-            <img :src="'storage/img/user2-160x160.jpg'" class="img-circle elevation-2" alt="User Image">
-            <p>
+            <PhotoProfile />
+            <p v-if="$page.props.user">
               {{ $page.props.user.name }} - Web Developer
               <small>Member since Nov. 2012</small>
             </p>
@@ -163,10 +163,12 @@
 </template>
 
 <script>
+import PhotoProfile from '@/components/Image/Profile';
 import { Link } from '@inertiajs/inertia-vue3'
     export default {
       name: 'Header',
       components: {
+        PhotoProfile,
         Link,
       },
       computed: {

@@ -1,5 +1,5 @@
 <template>
-  <app-layout>
+  <Content>
     <template #header>
       <h2 class="h4 font-weight-bold">
         Profile
@@ -31,11 +31,11 @@
 
       <delete-user-form />
     </template>
-  </app-layout>
+  </Content>
 </template>
 
 <script>
-import AppLayout from '@/Layouts/AppLayout'
+import Content from '@/components/Layouts/Content';
 import DeleteUserForm from './DeleteUserForm'
 import JetSectionBorder from '@/Jetstream/SectionBorder'
 import LogoutOtherBrowserSessionsForm from './LogoutOtherBrowserSessionsForm'
@@ -47,7 +47,7 @@ export default {
   props: ['sessions'],
 
   components: {
-    AppLayout,
+    Content,
     DeleteUserForm,
     JetSectionBorder,
     LogoutOtherBrowserSessionsForm,

@@ -54,7 +54,6 @@ export default {
     JetLabel,
     JetValidationErrors
   },
-
   props: {
     email: String,
     token: String,
