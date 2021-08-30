@@ -2,18 +2,7 @@
   <div class="wrapper">
     <Header />
     <Sidebar />
-      <div class="content-wrapper">
-        <section class="content-header">
-          <div class="container-fluid">
-            <slot name="header"></slot>
-          </div>
-        </section>
-        <section class="content">
-          <div class="container-fluid">
-            <slot></slot>
-          </div>
-        </section>
-      </div>
+      <slot />
     <Footer />
   </div>
 </template>
@@ -26,12 +15,12 @@ import Footer from '@/components/Layouts/Footer.vue';
     name: 'AppLayout',
     components: {
       Header,
-      Sidebar,
+      Sidebar, 
       Footer,
     }
   }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

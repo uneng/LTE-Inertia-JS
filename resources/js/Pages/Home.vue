@@ -1,5 +1,5 @@
 <template>
-    <app-home>
+    <Content>
         <template #header>
             <h2 class="h5 font-weight-bold">
                 Home
@@ -7,18 +7,20 @@
         </template>
 
         <welcome />
-    </app-home>
+    </Content>
 </template>
 
 <script>
-    import AppHome from '@/Layouts/AppHome'
-    import Welcome from '@/Jetstream/Welcome'
+    import AppHome from '@/Layouts/AppHome';
+    import Content from '@/Components/Layouts/Home/Content.vue';
+    import Welcome from '@/Jetstream/Welcome';
 
     export default {
         name: 'Home',
         components: {
-            AppHome,
+            Content,
             Welcome
         },
+        layout: AppHome,
     }
 </script>

@@ -5,7 +5,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <inertia-link :href="route('home')" class="nav-link">Home</inertia-link>
+        <Link :href="route('home')" class="nav-link">Home</Link>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
@@ -163,8 +163,12 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/inertia-vue3'
     export default {
       name: 'Header',
+      components: {
+        Link,
+      },
       computed: {
         path() {
           return window.location.pathname

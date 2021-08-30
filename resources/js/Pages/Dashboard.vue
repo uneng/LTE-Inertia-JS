@@ -1,23 +1,23 @@
 <template>
-    <app-layout>
-        <template #header>
+    <Content>
+        <template v-slot:header>
             <h2 class="h5 font-weight-bold">
                 Dashboard
             </h2>
         </template>
 
         <welcome />
-    </app-layout>
+    </Content>
 </template>
 
 <script>
-    import AppLayout from '@/Layouts/AppLayout'
-    import Welcome from '@/Jetstream/Welcome'
+    import Content from '@/components/Layouts/Content';
+    import Welcome from '@/Jetstream/Welcome';
 
     export default {
         components: {
-            AppLayout,
             Welcome,
+            Content,
         },
     }
 </script>
